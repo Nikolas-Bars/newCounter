@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import s from './CounterDisplay.module.css'
 import {ErrorType} from "./Counter";
+import ButtonComponent from "./ButtonComponent";
 
 type PropsType ={
     maxValue: number
@@ -32,8 +33,8 @@ const CounterDisplay: React.FC<PropsType> = (props) => {
             </div>
 
             <div className={s.buttonblock}>
-                <button onClick={incValue} disabled={props.maxValue <= props.value || props.error !== null}>inc</button> <button onClick={resetHandler}>reset</button>
-
+                {/*<button onClick={incValue} disabled={props.maxValue <= props.value || props.error !== null}>inc</button>*/} {/*<button onClick={resetHandler}>reset</button>*/}
+                <ButtonComponent title={'inc'} disabled={props.maxValue <= props.value || props.error !== null} callback={incValue}   /><ButtonComponent title={'reset'} disabled={false} callback={resetHandler}   />
             </div>
         </div>
     );

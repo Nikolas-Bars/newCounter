@@ -2,6 +2,7 @@ import React, {ChangeEvent, useState} from 'react';
 
 import s from './SettingDisplay.module.css'
 import {ErrorType} from "./Counter";
+import ButtonComponent from "./ButtonComponent";
 
 type PropsType = {
     maxValue: number;
@@ -48,7 +49,8 @@ const SettingsDisplay: React.FC<PropsType> = (props) => {
             </div>
 
             <div className={s.buttonblock} >
-                <button onClick={props.set} disabled={props.error === "incorrect value"}>SET</button>
+                <ButtonComponent title={'SET'} disabled={props.error === "incorrect value"} callback={props.set}   />
+                {/*<button onClick={props.set} disabled={props.error === "incorrect value"}>SET</button>*/}
             </div>
         </div>
     );
