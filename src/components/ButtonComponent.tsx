@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from "@mui/material";
 
 type PropsType = {
     title: string
@@ -9,7 +10,7 @@ type PropsType = {
 const ButtonComponent = (props: PropsType) => {
     return (
         <>
-         <button onClick={props.callback} disabled={props.disabled}>{props.title}</button>
+            <Button variant="contained" color="primary" onClick={props.callback} disabled={props.disabled} style={{margin: '7px 5px'}}>{props.title}</Button>
         </>
     );
 };

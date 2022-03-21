@@ -38,13 +38,36 @@ const SettingsDisplay: React.FC<PropsType> = (props) => {
         }
     }
 
+
+
+
     return (
         <div className={s.mainblock}>
             <div className={s.settingsblock}>
+
+
+
                 <div>
-                    <div><div style={{float: 'left', textAlign: "left", margin: '10px'}}>max value: </div>        <input value={props.maxValue} onChange={changeValue} style={{float: 'right', width: '100px', textAlign: 'center', margin: '10px'}} type="number" /></div>
-                    <div><div style={{float: 'left', textAlign: "left", margin: '10px'}}>start value: </div>        <input value={props.startValue} onChange={changeStartValue} style={{float: 'right', width: '100px', textAlign: 'center', margin: '10px'}} type="number" /></div>
+
+
+                    <div><div style={{float: 'left', textAlign: "left", margin: '10px'}}>max value: </div>
+                        <input value={props.maxValue} onChange={changeValue} style={{float: 'right', width: '100px', textAlign: 'center', margin: '10px', color: 'black'}} type="number" /></div>
+
+
+                    <div><div style={{float: 'left', textAlign: "left", margin: '10px'}}>start value: </div>
+                        <input value={props.startValue} onChange={changeStartValue} style={{float: 'right', width: '100px', textAlign: 'center', margin: '10px'}} type="number" /></div>
+
+
                 </div>
+
+
+
+
+
+
+
+
+
 
             </div>
 
