@@ -37,7 +37,9 @@ const CounterDisplay: React.FC<PropsType> = (props) => {
 
             <div className={s.buttonblock}>
                 {/*<button onClick={incValue} disabled={props.maxValue <= props.value || props.error !== null}>inc</button>*/} {/*<button onClick={resetHandler}>reset</button>*/}
-                <ButtonComponent title={'inc'} disabled={props.maxValue <= props.value || props.error !== null} callback={incValue}   /><ButtonComponent title={'reset'} disabled={false} callback={resetHandler}   />
+                <ButtonComponent  title={'inc'}  disabled={props.maxValue <= props.value || props.error !== null}
+                    callback={incValue}   />
+                    <ButtonComponent title={'reset'} disabled={false} callback={resetHandler}   />
             </div>
 
 

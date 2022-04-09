@@ -22,6 +22,7 @@ const CounterDisplayTwo: React.FC<PropsType> = (props) => {
 
     const incValue = () =>{
         props.setValue(props.value+1)
+        console.log(props)
     }
 
     const resetHandler = () =>{

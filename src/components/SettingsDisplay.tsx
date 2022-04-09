@@ -29,9 +29,9 @@ const SettingsDisplay: React.FC<PropsType> = (props) => {
     const changeStartValue = (e: ChangeEvent<HTMLInputElement>)=>{
         props.setStartValue(Number(e.target.value))
         console.log(props.startValue)
-        debugger
+
         if(Number(e.target.value) >= props.maxValue || Number(e.target.value) < 0){
-            debugger
+
             props.setError('incorrect value')
         }else{
             props.setError('enter values and press "SET"')
